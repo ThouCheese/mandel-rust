@@ -5,3 +5,8 @@ authors = ["luuk <luuk.wester@gmail.com>"]
 
 [dependencies]
 rayon = "*"
+bmp = "*"
+
+[profile.release]
+lto = true
+# panic = 'abort'  # does not work with lto = true
